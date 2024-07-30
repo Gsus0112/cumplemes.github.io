@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celebración de un Mes</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+</head>
+<body onclick="Playaudio()">
+    <header class="fade-in" data-aos="fade-down">
+        <h1>¡Feliz Primer Mes de Novios!</h1>
+    </header>
+    <main data-aos="fade-up">
+        <section class="gallery">
+            <h2 data-aos="fade-up">Nuestros Momentos</h2>
+            <div class="photos">
+                <h3 style="font-size: 30px;">Hermosos momentos hemos vivido</h3>
+                <a href="img/4979289413595016663.jpg" data-lightbox="gallery" data-title="Foto 1">
+                    <img src="img/4979289413595016663.jpg" alt="Foto 1" data-aos="zoom-in">
+                </a>
+                <h4 style="font-size: 30px;">De los cuales estoy muy feliz de poder superar contigo</h4>
+                <a href="img/4979289413595016673.jpg" data-lightbox="gallery" data-title="Foto 2">
+                    <img src="img/4979289413595016673.jpg" alt="Foto 2" data-aos="zoom-in">
+                </a>
+                <h5 style="font-size: 30px;">Ahora mismo soy el hombre mas feliz del mundo por poder tenerte en mi vida en estos momentos
+                    ya que sin ti mi vida no seria la misma tal vez 
+                    pasamos momentos muy complicados pero....
+                </h5>
+                <a href="img/4979289413595016678.jpg" data-lightbox="gallery" data-title="Foto 5">
+                    <img src="img/4979289413595016678.jpg" alt="Foto 5" data-aos="zoom-in">
+                </a>
+                <h6 style="font-size: 30px;">Fuimos capacez de superar, y cada dia nos superamos mas y mas para ser mejor pareja y mejores personas
+                    agradezco tu compañia siempre por que eres eso que no sabia que necesitaba 
+                </h6>
+                <a href="img/4979289413595016679.jpg" data-lightbox="gallery" data-title="Foto 3">
+                    <img src="img/4979289413595016679.jpg" alt="Foto 3" data-aos="zoom-in">
+                </a>
+                <h7 style="font-size: 30px"> Te agradezco todo esto que hemos pasado y supimos superar, desde el momento en que te vi realmente supe
+                    que queria estra contigo y te agradezco todo lo que has hecho por mi
+                </h7>
+
+                <a href="img/4979289413595016676.jpg" data-lightbox="gallery" data-title="Foto 4">
+                    <img src="img/4979289413595016676.jpg" alt="Foto 4" data-aos="zoom-in">
+                </a>
+                <h8 style="font-size: 30px;">Espero te guste este regalo no es algo costoso pero no sabes todo lo que me costo desde hacer el codigo 
+                    a subir la pagina jkajajaja, TE AMO LEONOR 
+                </h8>
+            </div>
+            <div class="videos">
+                <a href="videos/IMG_4518.mp4" data-lightbox="gallery" data-title="Video 1">
+                    <video src="videos/IMG_4518.mp4" controls data-aos="zoom-in"></video>
+                </a>
+                <a href="videos/IMG_3393.mp4" data-lightbox="gallery" data-title="Video 2">
+                    <video src="videos/IMG_3393.mp4" controls data-aos="zoom-in"></video>
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer data-aos="up">
+        <p>Con mucho amor, Jesús</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+        // Corazones flotantes
+        function createHeart() {
+            const heart = document.createElement('div');
+            heart.classList.add('heart');
+            heart.style.left = `${Math.random() * 100}%`;
+            heart.style.animationDuration = `${Math.random() * 3 + 2}s`;
+            document.body.appendChild(heart);
+
+            setTimeout(() => {
+                heart.remove();
+            }, 5000);
+        }
+
+        setInterval(createHeart, 500);
+    </script>
+</body></body>
+<audio id="cancion1" controls lops>
+    <source src="music/cancion.mp3" type="audio/mpeg">
+
+</audio>
+</Section>
+<script>
+    function Playaudio() {
+        document.getElementById("cancion1").play();
+    }
+</script>
+</html>
